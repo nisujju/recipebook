@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="center-block">
+    <h2><%= @fields[:title] %></h2>
+  </div>
+  <% if @fields[:photo] %>
+    <%= image_tag @fields[:photo].url, size: "400" %>
+  <% end %>
+  	<ul>
+    <% @fields[:tags]&.map do |tag| %>
+      <li> <%= tag.name %></li>
+    <% end %>
+    </ul>
+  <p><%= @fields[:description] %></p>
+  <p><%= "Chef name: #{@fields[:chef]&.name || "N.A"}" %></p>
+</div>

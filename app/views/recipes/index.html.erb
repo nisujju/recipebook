@@ -1,0 +1,19 @@
+<div class="container">
+<table class= "table table-hover">
+  <thread> 
+     <tr>
+       <th>Image</th>
+       <th>Title</th>
+     </tr>
+  </thead>
+  <tbody>
+    <% @recipes&.map do |recipe| %>
+      <% entry = recipe.model_entry %>
+      <tr>
+         <td><%= image_tag entry.fields[:photo].url, size: "200"%></td>
+         <td><%= link_to entry.title, recipe_path(recipe) %></td>
+       </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
