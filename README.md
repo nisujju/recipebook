@@ -3,7 +3,7 @@
 ## Usage guide
 
 App deployed on heroku and can be accessed at 
-1. To list all recipe list https://obscure-waters-29784.herokuapp.com/recipes
+1. To list all recipe list https://obscure-waters-29784.herokuapp.com
 2. To view detailed description of any recipe click on title of above recipes page
 
 Note: The page loading can be very slow or may timeout due to free version of heroku on which the app is deployed. In case of timeout reattempt to fetch url will fix it.
